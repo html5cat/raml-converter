@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" type="text/css" href="bower_components/codemirror/lib/codemirror.css">
   <link rel="stylesheet" href="css/app.css"/>
+
   <link rel="stylesheet" type="text/css" href="bower_components/api-designer/dist/styles/main.css">
   <link rel="stylesheet" type="text/css" href="bower_components/api-designer/dist/styles/vendor.css">
 
@@ -27,6 +28,18 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+
+  <section id="converter">
+
+    <section id="converterSource" ng-controller="ConverterSource">
+      <ui-codemirror ui-codemirror-opts="editorOptions"></ui-codemirror>
+    </section>
+
+    <section id="converterTarget">
+        <raml-editor></raml-editor>
+    </section>
+  </section>
+
 
   <div ng-view></div>
 

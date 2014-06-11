@@ -28,3 +28,21 @@
   content: "";
   padding: 0;
 }
+
+#converter {
+  width: 100%;
+}
+
+#converterSource,
+#converterTarget {
+  float: left;
+  width: 50%;
+  height: 600px;
+}
+#converterTarget {
+  float: right;
+}
+
+#converterSource .CodeMirror {
+  width: 50%;
+}
